@@ -1,0 +1,112 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: false
+external-controller: '127.0.0.1:9090'
+unified-delay: true
+tcp-concurrent: true
+dns:
+    enable: true
+    use-hosts: true
+    fake-ip-range: 198.18.0.1/16
+    fake-ip-filter: ['*.lan', localhost.ptlogin2.qq.com, '*.msftconnecttest.com', '*.msftncsi.com', '*.ipv6.microsoft.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com']
+    nameserver: [119.29.29.29, 223.5.5.5, 223.6.6.6, 'tcp://223.5.5.5', 'tcp://223.6.6.6', 'tls://dns.google:853', 'tls://8.8.8.8:853', 'tls://8.8.4.4:853', 'tls://dns.alidns.com', 'tls://223.5.5.5', 'tls://223.6.6.6', 'tls://dot.pub', 'tls://1.12.12.12', 'tls://120.53.53.53', 'https://dns.google/dns-query', 'https://8.8.8.8/dns-query', 'https://8.8.4.4/dns-query', 'https://dns.alidns.com/dns-query', 'https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query', 'https://doh.pub/dns-query', 'https://1.12.12.12/dns-query', 'https://120.53.53.53/dns-query']
+    default-nameserver: [119.29.29.29, 223.5.5.5, 223.6.6.6, 'tcp://119.29.29.29', 'tcp://223.5.5.5', 'tcp://223.6.6.6']
+proxies:
+    - { name: '🇭🇰 澳门 01丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25823, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇭🇰 澳门 02丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25924, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇭🇰 香港 03丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25825, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇭🇰 香港 04丨1x', type: ss, server: south.wechat1.cc, port: 25826, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇭🇰 香港 05丨1x', type: ss, server: center.wechat1.cc, port: 25925, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇭🇰 香港 06丨1x', type: ss, server: east.wechat1.cc, port: 25927, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇸🇬 新加坡 01丨油管无广丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25832, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇸🇬 新加坡 02丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25833, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇸🇬 新加坡 03丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25834, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇸🇬 新加坡 04丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25855, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇨🇳 台湾 01丨家宽丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25883, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇨🇳 台湾 02丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25861, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇨🇳 台湾 03丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25862, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇨🇳 台湾 04丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25899, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇯🇵 日本 01丨家宽丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25829, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇯🇵 日本 02丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25830, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇯🇵 日本 03丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25831, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇯🇵 日本 04丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25879, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇯🇵 日本 05丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25893, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇯🇵 日本 06丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25898, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇺🇸 美国丨拉斯维加斯丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25841, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇺🇸 美国丨纽约丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25843, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇺🇸 美国丨盐湖城丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25842, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇺🇸 美国丨洛杉矶 01丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25844, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇺🇸 美国丨洛杉矶 02丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25894, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇺🇸 美国丨洛杉矶 03丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25942, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇲🇴 澳门丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25897, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇲🇾 马来西亚丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25863, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇻🇳 越南丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25851, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇹🇭 泰国丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25871, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇰🇷 韩国丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25854, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇬🇧 英国丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25839, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇦🇺 澳大利亚丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25931, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇳🇱 荷兰丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25878, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇩🇪 德国丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25865, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇧🇷 巴西丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25933, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇷🇺 俄罗斯丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25877, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇹🇷 土耳其丨1x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25847, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇳🇬 尼日利亚丨1.5x', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25849, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇭🇰 香港丨ISP Anywhere', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25937, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+    - { name: '🇺🇸 美国丨ISP Anywhere', type: ss, server: bfa3222da8b35b36.cdn.jiashule.com, port: 25935, cipher: aes-128-gcm, password: 82a36e4e-66d4-4dc3-a4ab-2a2aad206788, udp: true }
+proxy-groups:
+    - { name: YepFast-椰皮加速, type: select, proxies: [自动选择, 故障转移, '🇭🇰 香港 01丨1x', '🇭🇰 香港 02丨1x', '🇭🇰 香港 03丨1x', '🇭🇰 香港 04丨1x', '🇭🇰 香港 05丨1x', '🇭🇰 香港 06丨1x', '🇸🇬 新加坡 01丨油管无广丨1x', '🇸🇬 新加坡 02丨1x', '🇸🇬 新加坡 03丨1x', '🇸🇬 新加坡 04丨1x', '🇨🇳 台湾 01丨家宽丨1x', '🇨🇳 台湾 02丨1x', '🇨🇳 台湾 03丨1x', '🇨🇳 台湾 04丨1x', '🇯🇵 日本 01丨家宽丨1x', '🇯🇵 日本 02丨1x', '🇯🇵 日本 03丨1x', '🇯🇵 日本 04丨1x', '🇯🇵 日本 05丨1x', '🇯🇵 日本 06丨1x', '🇺🇸 美国丨拉斯维加斯丨1x', '🇺🇸 美国丨纽约丨1x', '🇺🇸 美国丨盐湖城丨1x', '🇺🇸 美国丨洛杉矶 01丨1x', '🇺🇸 美国丨洛杉矶 02丨1x', '🇺🇸 美国丨洛杉矶 03丨1x', '🇲🇴 澳门丨1x', '🇲🇾 马来西亚丨1x', '🇻🇳 越南丨1x', '🇹🇭 泰国丨1x', '🇰🇷 韩国丨1x', '🇬🇧 英国丨1x', '🇦🇺 澳大利亚丨1x', '🇳🇱 荷兰丨1x', '🇩🇪 德国丨1x', '🇧🇷 巴西丨1x', '🇷🇺 俄罗斯丨1x', '🇹🇷 土耳其丨1x', '🇳🇬 尼日利亚丨1.5x', '🇭🇰 香港丨ISP Anywhere', '🇺🇸 美国丨ISP Anywhere'] }
+    - { name: 自动选择, type: url-test, proxies: ['🇭🇰 香港 01丨1x', '🇭🇰 香港 02丨1x', '🇭🇰 香港 03丨1x', '🇭🇰 香港 04丨1x', '🇭🇰 香港 05丨1x', '🇭🇰 香港 06丨1x', '🇸🇬 新加坡 01丨油管无广丨1x', '🇸🇬 新加坡 02丨1x', '🇸🇬 新加坡 03丨1x', '🇸🇬 新加坡 04丨1x', '🇨🇳 台湾 01丨家宽丨1x', '🇨🇳 台湾 02丨1x', '🇨🇳 台湾 03丨1x', '🇨🇳 台湾 04丨1x', '🇯🇵 日本 01丨家宽丨1x', '🇯🇵 日本 02丨1x', '🇯🇵 日本 03丨1x', '🇯🇵 日本 04丨1x', '🇯🇵 日本 05丨1x', '🇯🇵 日本 06丨1x', '🇺🇸 美国丨拉斯维加斯丨1x', '🇺🇸 美国丨纽约丨1x', '🇺🇸 美国丨盐湖城丨1x', '🇺🇸 美国丨洛杉矶 01丨1x', '🇺🇸 美国丨洛杉矶 02丨1x', '🇺🇸 美国丨洛杉矶 03丨1x', '🇲🇴 澳门丨1x', '🇲🇾 马来西亚丨1x', '🇻🇳 越南丨1x', '🇹🇭 泰国丨1x', '🇰🇷 韩国丨1x', '🇬🇧 英国丨1x', '🇦🇺 澳大利亚丨1x', '🇳🇱 荷兰丨1x', '🇩🇪 德国丨1x', '🇧🇷 巴西丨1x', '🇷🇺 俄罗斯丨1x', '🇹🇷 土耳其丨1x', '🇳🇬 尼日利亚丨1.5x', '🇭🇰 香港丨ISP Anywhere', '🇺🇸 美国丨ISP Anywhere'], url: 'http://cp.cloudflare.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['🇭🇰 香港 01丨1x', '🇭🇰 香港 02丨1x', '🇭🇰 香港 03丨1x', '🇭🇰 香港 04丨1x', '🇭🇰 香港 05丨1x', '🇭🇰 香港 06丨1x', '🇸🇬 新加坡 01丨油管无广丨1x', '🇸🇬 新加坡 02丨1x', '🇸🇬 新加坡 03丨1x', '🇸🇬 新加坡 04丨1x', '🇨🇳 台湾 01丨家宽丨1x', '🇨🇳 台湾 02丨1x', '🇨🇳 台湾 03丨1x', '🇨🇳 台湾 04丨1x', '🇯🇵 日本 01丨家宽丨1x', '🇯🇵 日本 02丨1x', '🇯🇵 日本 03丨1x', '🇯🇵 日本 04丨1x', '🇯🇵 日本 05丨1x', '🇯🇵 日本 06丨1x', '🇺🇸 美国丨拉斯维加斯丨1x', '🇺🇸 美国丨纽约丨1x', '🇺🇸 美国丨盐湖城丨1x', '🇺🇸 美国丨洛杉矶 01丨1x', '🇺🇸 美国丨洛杉矶 02丨1x', '🇺🇸 美国丨洛杉矶 03丨1x', '🇲🇴 澳门丨1x', '🇲🇾 马来西亚丨1x', '🇻🇳 越南丨1x', '🇹🇭 泰国丨1x', '🇰🇷 韩国丨1x', '🇬🇧 英国丨1x', '🇦🇺 澳大利亚丨1x', '🇳🇱 荷兰丨1x', '🇩🇪 德国丨1x', '🇧🇷 巴西丨1x', '🇷🇺 俄罗斯丨1x', '🇹🇷 土耳其丨1x', '🇳🇬 尼日利亚丨1.5x', '🇭🇰 香港丨ISP Anywhere', '🇺🇸 美国丨ISP Anywhere'], url: 'http://cp.cloudflare.com/generate_204', interval: 7200 }
+rule-providers:
+    LocalAreaNetwork: { type: http, behavior: classical, url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/LocalAreaNetwork.yaml', interval: 86400, path: ./ruleset/LocalAreaNetwork.yml }
+    UnBan: { type: http, behavior: classical, url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/UnBan.yaml', interval: 86400, path: ./ruleset/UnBan.yml }
+    GoogleCN: { type: http, behavior: classical, url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleCN.yaml', interval: 86400, path: ./ruleset/GoogleCN.yml }
+    SteamCN: { type: http, behavior: classical, url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/SteamCN.yaml', interval: 86400, path: ./ruleset/SteamCN.yml }
+    YouTube: { type: http, behavior: classical, url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/YouTube.yaml', interval: 86400, path: ./ruleset/YouTube.yml }
+rules:
+    - 'RULE-SET,LocalAreaNetwork,DIRECT'
+    - 'RULE-SET,UnBan,DIRECT'
+    - 'RULE-SET,GoogleCN,DIRECT'
+    - 'RULE-SET,SteamCN,DIRECT'
+    - 'DOMAIN-SUFFIX,telegra.ph,YepFast-椰皮加速'
+    - 'DOMAIN-SUFFIX,telegram.org,YepFast-椰皮加速'
+    - 'IP-CIDR,91.108.0.0/16,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,95.161.64.0/20,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,109.239.140.0/24,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,YepFast-椰皮加速,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,YepFast-椰皮加速,no-resolve'
+    - 'DOMAIN-SUFFIX,emby.moe,YepFast-椰皮加速'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,YepFast-椰皮加速'
